@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Criar Usuário</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="cadastrar_usuario.html">Cadastro de Usuário</a>
+            <a href="cadastrar_produto.php">Cadastro de Produto</a>
+            <a href="index.html">Sair</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Criar Usuário</h1>
+        <form action="cadastrar_usuario.php" method="post">
+            <label for="login">Login:</label>
+            <input type="text" id="login" name="login" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            
+            <label for="perfil">Perfil:</label>
+            <select id="perfil" name="perfil" required>
+                <option value="A">Administrador</option>
+                <option value="V">Vendedor</option>
+            </select>
+            
+            <input type="submit" value="Criar Usuário" class="green">
+        </form>
+    </div>
+</body>
+</html>
